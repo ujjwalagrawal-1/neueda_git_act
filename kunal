@@ -1,0 +1,58 @@
+Things i have learned in order to work upon a repo shared to me-
+ 1st case - if repo is not being created then-
+            Go to github and then click on create repo option and select profile and repo title and make it public or private as per our need then
+            add collaborators if you wish and create it and then follow from step 2 below.
+
+ 2nd case- if we are added as collaborators in a repo then do the following steps-
+
+1.git clone <repository-url>
+Clones the GitHub repository to the local system.
+
+2.cd <repository-name>
+Moves into the project folder.
+
+3.git status
+Shows the current status of files in the repository.
+
+4.git checkout -b <branch-name>
+Creates a new branch and switches to it.
+
+5.git branch
+Displays all local branches.
+
+6.git add .
+Adds all changed files to the staging area.
+
+7.git commit -m "commit message"
+Saves the staged changes with a commit message.
+
+8.git remote -v
+Shows the connected remote GitHub repository URLs.
+
+9.git pull origin main
+Fetches and merges the latest changes from the main branch.
+
+10.git push origin <branch-name>
+Pushes the local branch changes to GitHub.
+
+11.git push origin main
+Pushes local main branch changes to GitHub.
+
+Other commands -
+12.git log
+Displays commit history.
+
+13.git diff
+Shows differences between changed files and the last commit.
+
+14.git fetch
+Downloads changes from GitHub without merging them.
+
+15.git merge <branch-name>
+Merges the specified branch into the current branch.
+
+16.git config --global user.name "Your Name"
+Sets the Git username.
+
+17.git config --global user.email "your@email.com"
+Sets the Git email.
