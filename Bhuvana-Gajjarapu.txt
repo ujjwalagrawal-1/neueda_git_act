@@ -1,0 +1,174 @@
+Bhuvana Gajjarapu - Git Learning Log (Today)
+Date: 2026-07-21
+
+1. Initial Git Setup
+I started by configuring Git identity so all commits are linked to my account.
+
+Commands:
+- git config --global user.name "BHuvanagajjarapu"
+- git config --global user.email "gajjarapubhuvana@gmail.com"
+- git config --global --list
+
+2. Clone Project from GitHub
+I cloned the agriculture project from GitHub to my local system.
+
+Commands:
+- git clone https://github.com/Bhuvanagajjarapu/AgriLearnNetwork.git
+- cd AgriLearnNetwork
+
+3. Connect Local Repository to Remote Origin
+I set the remote repository URL as origin.
+
+Commands:
+- git remote add origin https://github.com/BHuvanagajjarapu/neueda_practice.git
+- git remote -v
+
+4. Work on Main Branch, Commit, and Push
+I made changes on the main branch, added files, committed, and pushed to remote.
+
+Commands:
+- git branch
+- git checkout main
+- git add .
+- git commit -m "Initial update on main branch"
+- git push -u origin main
+
+5. Create and Push a Feature Branch
+I created a new feature branch and shared changes in that branch.
+I practiced both ways of creating/switching branches.
+
+Commands:
+- git checkout -b feature/update-content
+- git push -u origin feature/update-content
+
+Alternative commands I practiced:
+- git switch -c feature/another-branch
+- git branch feature/sample-branch
+- git checkout feature/sample-branch
+- git switch feature/sample-branch
+
+6. Modify the Same File and Push Again
+I changed a line (title "car") in the same file and pushed the update.
+
+Commands:
+- git add .
+- git commit -m "Changed title line to car"
+- git push
+
+7. Create Merge Request / Pull Request
+I created a merge request to merge feature branch into main.
+During merge, I got a conflict.
+
+Useful commands:
+- git fetch origin
+- git checkout main
+- git pull origin main
+
+8. Resolve Merge Conflict
+I resolved conflicts manually, then completed merge commit.
+
+Commands:
+- git checkout feature/update-content
+- git merge main
+- (resolve conflict in file manually)
+- git add .
+- git commit -m "Resolve merge conflict"
+- git push
+
+i also learned with can accept the incoming changes or
+keep our changes only or accpet both
+
+9. Resolve with Rebase Method (Practice)
+I also practiced rebase to keep history clean.
+
+Commands:
+- git checkout feature/update-content
+- git fetch origin
+- git rebase origin/main
+- (conflict) resolve file
+- git add .
+
+10. Reset Remote URL
+I reset/updated the remote URL for origin.
+
+Commands:
+- git remote set-url origin <new-remote-url>
+- git remote -v
+
+
+11. Reset Commands I learned
+I also learned reset commands for unstage and commit rollback.
+
+Commands:
+- git reset
+- git reset --soft HEAD~1
+- git reset --mixed HEAD~1
+- git reset --hard HEAD~1
+
+
+12. Useful Verification Commands
+I used these to check status and history while working.
+
+Commands:
+- git status
+- git log 
+- git diff
+
+13. Cherry-pick Practice
+I learned how to copy one specific commit from one branch to another branch without merging the full branch.
+
+Commands:
+- git log --oneline
+- git checkout main
+- git cherry-pick <commit-hash>
+- git status
+- git push
+
+14. Difference Between Fetch and Pull (Implemented)
+I understood and implemented the practical difference:
+- git fetch only downloads new changes from remote and does not change my working files.
+- git pull downloads changes and merges/rebases them into my current branch.
+
+Commands I used:
+- git fetch origin
+- git status
+- git log
+- git pull origin main
+
+15. Difference Between Reset and Rebase
+I learned the purpose of both commands and where to use them:
+- git reset is used to move HEAD backward and undo local commits or staging.
+- git rebase is used to replay my branch commits on top of another base to keep cleaner history.
+
+Commands I learned:
+- git reset --soft HEAD~1
+- git reset --mixed HEAD~1
+- git rebase origin/main
+- git rebase --continue
+
+16. Git Stash Learning
+I learned how to temporarily save my uncommitted work using stash and restore it later.
+
+Commands I learned:
+- git stash
+- git stash list
+- git stash apply
+- git stash pop
+- git stash drop
+- git stash clear
+
+Summary of What I Learned Today
+Today I learned the complete Git workflow from setup to collaboration:
+- Initial configuration with user.name and user.email
+- Cloning a project and connecting remote origin
+- Creating commits and pushing to main and feature branches
+- Using checkout, switch, and branch creation options (-b and -c)
+- Handling merge requests and resolving merge conflicts
+- Using both merge and rebase approaches
+- Resetting remote URLs and practicing reset commands safely
+- Learning and using cherry-pick for selective commit transfer
+- Understanding and implementing the difference between fetch and pull
+- Understanding practical difference between reset and rebase
+- Learning Git stash to temporarily save and restore local work
+
+This practice improved my confidence in day-to-day Git usage for team projects.
