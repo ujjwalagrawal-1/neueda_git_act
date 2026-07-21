@@ -1,0 +1,31 @@
+These are the commands i have learnt today:
+
+for clone someone's repo we need to run this command in the terminal:git clone URL
+
+to ceate a branch : git branch branch/file name
+to move/switch from one branch to another branch: git switch branch/file name
+
+to add commit : git add .
+git commit -m "name of commit"
+git push
+
+# for PR:
+# git checkout -b file name
+# git add . 
+# git commit -m "name of commit/file we are merging"
+# git push
+
+if we want to check the status of repo then run this command in the terminal: git status
+
+if we wanna push direct to main then we can use this command: git push origin main
+
+git merge <file name>
+merge the  specified branch into the current branch
+
+git config --global user.email "our email id"
+ set our email
+
+ git config --global user.name "name here"
+ set our name here
+
+ 
